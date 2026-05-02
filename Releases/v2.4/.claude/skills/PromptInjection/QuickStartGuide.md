@@ -247,7 +247,6 @@ Actual: [Document]
 **Communities:**
 - OWASP LLM Security Working Group
 - AI Red Team communities
-- Security researcher Discord servers
 - Academic conferences (NeurIPS, ICLR security workshops)
 
 **Practice environments:**

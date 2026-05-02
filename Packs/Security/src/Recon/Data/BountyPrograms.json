@@ -2275,15 +2275,6 @@
       "platform": "chaos"
     },
     {
-      "name": "Discord",
-      "url": "https://canary.discord.com/security",
-      "bounty": true,
-      "domains": [
-        "discord.com"
-      ],
-      "platform": "chaos"
-    },
-    {
       "name": "DJI",
       "url": "https://security.dji.com/policy?lang=en_US",
       "bounty": true,
@@ -2516,7 +2507,7 @@
       "platform": "chaos"
     },
     {
-      "name": "Engel & Völkers",
+      "name": "Engel & V\u00f6lkers",
       "url": "https://hackerone.com/engel_volkers",
       "bounty": false,
       "domains": [
@@ -6236,7 +6227,7 @@
       "platform": "chaos"
     },
     {
-      "name": "MON ESPACE SANTÉ",
+      "name": "MON ESPACE SANT\u00c9",
       "url": "https://yeswehack.com/programs/mon-espace-sante-mes",
       "bounty": true,
       "swag": false,

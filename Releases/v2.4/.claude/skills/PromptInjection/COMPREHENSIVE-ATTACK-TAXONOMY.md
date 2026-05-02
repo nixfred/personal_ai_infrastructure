@@ -752,7 +752,7 @@ This is not a bug - it's an architectural limitation requiring fundamental redes
 - 30+ harm categories with ML optimization
 - Excellent CI/CD integration (YAML configs)
 - OWASP/NIST/EU AI Act compliance mapping
-- Used by Microsoft, Shopify, Discord
+- Used by Microsoft, Shopify
 - **Best for:** Development teams needing automated testing
 
 **2. Garak (NVIDIA) - Research-Focused Scanner**

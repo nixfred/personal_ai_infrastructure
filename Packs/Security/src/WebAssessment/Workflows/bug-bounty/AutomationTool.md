@@ -213,7 +213,6 @@ Configure notifications for new programs:
 ```bash
 # In ${PAI_DIR}/.env
 SLACK_WEBHOOK_URL=your_webhook
-DISCORD_WEBHOOK_URL=your_webhook
 ```
 
 Tool will notify when:

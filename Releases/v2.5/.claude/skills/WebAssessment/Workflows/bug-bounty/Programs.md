@@ -209,7 +209,6 @@ See: `~/.claude/skills/Webassessment/Workflows/bug-bounty/automation-tool.md`
 
 ### Community
 - **Twitter** - #bugbounty community
-- **Discord** - Bug bounty Discord servers
 - **Reddit** - r/bugbounty
 - **Blogs** - Read writeups from successful researchers
 

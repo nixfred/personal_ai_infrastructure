@@ -66,7 +66,7 @@ This pack is designed for AI-assisted installation. Give this directory to your 
 | Art skill | `src/Art/SKILL.md` | Visual content creation skill definition and workflow routing |
 | Art workflows | `src/Art/Workflows/` | 20 specialized visual workflows (Essay, Mermaid, Comparisons, etc.) |
 | Art tools | `src/Art/Tools/` | TypeScript tools: Generate.ts, ComposeThumbnail.ts, GeneratePrompt.ts, GenerateMidjourneyImage.ts |
-| Art library | `src/Art/Lib/` | Support code: Discord bot, Midjourney client |
+| Art library | `src/Art/Lib/` | Support code |
 | Art examples | `src/Art/Examples/` | Reference images for style consistency |
 | Remotion skill | `src/Remotion/SKILL.md` | Video creation skill definition |
 | Remotion docs | `src/Remotion/*.md` | ArtIntegration, CriticalRules, Patterns |

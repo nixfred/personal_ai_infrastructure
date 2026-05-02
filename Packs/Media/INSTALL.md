@@ -407,7 +407,7 @@ Create or update `~/.claude/PAI/USER/SKILLCUSTOMIZATIONS/Art/PREFERENCES.md` wit
 | `src/Art/SKILL.md` | Art skill definition with workflow routing |
 | `src/Art/Workflows/` | 20 specialized visual creation workflows |
 | `src/Art/Tools/` | TypeScript tools: Generate, ComposeThumbnail, GeneratePrompt, GenerateMidjourneyImage |
-| `src/Art/Lib/` | Support: Discord bot, Midjourney client |
+| `src/Art/Lib/` | Support code |
 | `src/Art/Examples/` | 4 reference images for style consistency |
 | `src/Remotion/SKILL.md` | Remotion skill definition |
 | `src/Remotion/*.md` | ArtIntegration, CriticalRules, Patterns |

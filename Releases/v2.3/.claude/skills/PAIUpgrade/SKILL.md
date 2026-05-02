@@ -145,7 +145,6 @@ These are busywork, not upgrades. If the system does it, we don't need to "docum
 2. **GitHub Repositories** (21+) - claude-code, skills, MCP, SDKs, cookbooks
 3. **Changelogs** (5) - Claude Code CHANGELOG, releases, docs notes
 4. **Documentation** (6) - Claude docs, API docs, MCP docs, spec, registry
-5. **Community** (1) - Discord server
 
 **Tool:** `Tools/Anthropic.ts`
 

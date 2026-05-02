@@ -133,7 +133,7 @@ Task({ subagent_type: "ClaudeResearcher", prompt: "Check ransomware leak sites f
 Task({ subagent_type: "ClaudeResearcher", prompt: "Search underground forum mentions for [entity]" })
 
 // Verification (Gemini + Grok)
-Task({ subagent_type: "GeminiResearcher", prompt: "Search Telegram/Discord for [entity]" })
+Task({ subagent_type: "GeminiResearcher", prompt: "Search Telegram for [entity]" })
 Task({ subagent_type: "GrokResearcher", prompt: "Verify dark web exposure for [entity]" })
 ```
 

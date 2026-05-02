@@ -209,7 +209,6 @@ See: `./AutomationTool.md`
 
 ### Community
 - **Twitter** - #bugbounty community
-- **Discord** - Bug bounty Discord servers
 - **Reddit** - r/bugbounty
 - **Blogs** - Read writeups from successful researchers
 

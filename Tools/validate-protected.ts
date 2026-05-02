@@ -386,7 +386,7 @@ async function main() {
       console.log('  - api_keys          (Anthropic, OpenAI, AWS, Stripe, etc.)');
       console.log('  - github_tokens     (ghp_, gho_, github_pat_, etc.)');
       console.log('  - slack_tokens      (xoxb-, xoxp-, etc.)');
-      console.log('  - webhooks          (Discord, Slack, ntfy, Zapier)');
+      console.log('  - webhooks          (Slack, ntfy, Zapier)');
       console.log('  - database_credentials');
       console.log('  - private_keys      (RSA, SSH, PGP, etc.)');
       console.log('  - pii_ssn_financial (SSN, EIN, credit cards)');

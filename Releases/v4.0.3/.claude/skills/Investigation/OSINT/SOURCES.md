@@ -491,8 +491,6 @@ Comprehensive collection of OSINT sources for the PAI OSINT skill. Organized by 
 | Source | Platform | Description |
 |--------|----------|-------------|
 | [r/OSINT](https://reddit.com/r/OSINT) | Reddit | 200K+ members |
-| Bellingcat Discord | Discord | Investigation techniques discussion |
-| The OSINTion Discord | Discord | Cross-discipline intelligence |
 | Openosint | Slack | OSINT specialist network |
 | [UK OSINT Community](https://uk-osint.net) | Web | UK practitioner community |
 | [Trace Labs](https://tracelabs.org) | Multiple | Missing persons OSINT community |

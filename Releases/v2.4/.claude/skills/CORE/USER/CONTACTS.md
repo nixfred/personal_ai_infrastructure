@@ -53,7 +53,7 @@ This file helps your AI understand your professional and personal network for co
 ## Community
 
 ### [Community/Group Name]
-- **Platform:** [Discord / Slack / etc.]
+- **Platform:** [Slack / etc.]
 - **Your Role:** [Member / Moderator / Admin]
 - **Key People:** [Names of active members you interact with]
 

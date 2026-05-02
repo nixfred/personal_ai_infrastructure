@@ -159,7 +159,7 @@ Task({ subagent_type: "ClaudeResearcher", prompt: "Check ransomware leak sites a
 Task({ subagent_type: "ClaudeResearcher", prompt: "Search underground forum mentions of [entity] — access broker listings, vulnerability discussions, and credential sales." })
 
 // Messaging Platforms & Verification
-Task({ subagent_type: "GeminiResearcher", prompt: "Search Telegram channels and Discord servers for mentions of [entity]. Check known threat actor communication channels and data trading groups." })
+Task({ subagent_type: "GeminiResearcher", prompt: "Search Telegram channels for mentions of [entity]. Check known threat actor communication channels and data trading groups." })
 Task({ subagent_type: "GrokResearcher", prompt: "Verify dark web exposure claims for [entity]. Cross-reference with Intelligence X and HIBP. Classify findings as confirmed, unverified, or likely false positive." })
 ```
 

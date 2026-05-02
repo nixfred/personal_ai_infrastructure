@@ -6,7 +6,11 @@
       "url": "https://tldrsec.com",
       "type": "newsletter",
       "description": "Comprehensive weekly security newsletter by Clint Gibler",
-      "categories": ["news", "research", "ideas"]
+      "categories": [
+        "news",
+        "research",
+        "ideas"
+      ]
     },
     {
       "id": "nosecurity",
@@ -14,7 +18,10 @@
       "url": "https://no.security",
       "type": "blog",
       "description": "Caleb Sima's security insights and analysis",
-      "categories": ["ideas", "research"]
+      "categories": [
+        "ideas",
+        "research"
+      ]
     },
     {
       "id": "krebsonsecurity",
@@ -22,7 +29,9 @@
       "url": "https://krebsonsecurity.com",
       "type": "blog",
       "description": "Brian Krebs investigative security journalism",
-      "categories": ["news"]
+      "categories": [
+        "news"
+      ]
     },
     {
       "id": "thehackernews",
@@ -30,7 +39,10 @@
       "url": "https://thehackernews.com",
       "type": "news",
       "description": "Security news and vulnerability coverage",
-      "categories": ["news", "research"]
+      "categories": [
+        "news",
+        "research"
+      ]
     },
     {
       "id": "schneier",
@@ -38,7 +50,10 @@
       "url": "https://schneier.com",
       "type": "blog",
       "description": "Bruce Schneier's security commentary and analysis",
-      "categories": ["ideas", "research"]
+      "categories": [
+        "ideas",
+        "research"
+      ]
     },
     {
       "id": "riskybusiness",
@@ -46,23 +61,26 @@
       "url": "https://risky.biz",
       "type": "podcast",
       "description": "Security news podcast and analysis",
-      "categories": ["news", "ideas"]
+      "categories": [
+        "news",
+        "ideas"
+      ]
     }
   ],
   "categories": {
     "news": {
       "name": "Security News",
-      "emoji": "🔴",
+      "emoji": "\ud83d\udd34",
       "description": "Breaches, incidents, exploits in the wild"
     },
     "research": {
       "name": "Security Research",
-      "emoji": "🔬",
+      "emoji": "\ud83d\udd2c",
       "description": "CVEs, vulnerabilities, techniques, papers"
     },
     "ideas": {
       "name": "Security Ideas",
-      "emoji": "💡",
+      "emoji": "\ud83d\udca1",
       "description": "Opinions, trends, strategy, career"
     }
   },
