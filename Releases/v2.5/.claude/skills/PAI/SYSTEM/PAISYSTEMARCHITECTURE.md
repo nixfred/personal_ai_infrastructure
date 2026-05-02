@@ -388,7 +388,6 @@ YYYY-MM-DD-HHMMSS_[TYPE]_[description].md
 |---------|---------|
 | Voice | Primary TTS feedback |
 | Push (ntfy) | Mobile notifications |
-| Discord | Team/server alerts |
 | Desktop | Native notifications |
 
 ### Event Routing

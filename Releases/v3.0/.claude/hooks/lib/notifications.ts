@@ -1,7 +1,7 @@
 /**
  * Notification Service — ntfy + voice only
  *
- * Simplified from multi-channel (Discord, Twilio, Desktop) to just ntfy push.
+ * Simplified from multi-channel (Twilio, Desktop) to just ntfy push.
  * Voice notifications are handled by the voice server (localhost:8888).
  *
  * Design principles:

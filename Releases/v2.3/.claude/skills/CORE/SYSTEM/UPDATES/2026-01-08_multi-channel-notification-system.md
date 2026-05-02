@@ -8,7 +8,7 @@
 
 ## Summary
 
-Added external notification infrastructure with ntfy.sh (mobile push), Discord webhooks, and smart event-based routing. Notifications fire asynchronously based on event type and task duration.
+Added external notification infrastructure with ntfy.sh (mobile push) and smart event-based routing. Notifications fire asynchronously based on event type and task duration.
 
 ## What Changed
 
@@ -23,11 +23,11 @@ Added external notification infrastructure with ntfy.sh (mobile push), Discord w
 ```
 Hook Event → Notification Service → Smart Router
                                          │
-         ┌───────────────────────────────┼───────────────────────────────┐
-         │               │               │               │               │
-         v               v               v               v               v
-      Voice          Desktop          ntfy           Discord           SMS
-    (localhost)      (macOS)         (push)        (webhook)       (disabled)
+         ┌───────────────────────────────┼───────────────┐
+         │               │               │               │
+         v               v               v               v
+      Voice          Desktop          ntfy             SMS
+    (localhost)      (macOS)         (push)        (disabled)
 ```
 
 ## Key Design Decisions

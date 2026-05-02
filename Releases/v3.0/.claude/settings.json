@@ -786,7 +786,7 @@
       "env": "Environment variables available to all hooks and tools via process.env",
       "permissions": "Tool permission configuration (allow, deny, ask lists)",
       "hooks": "Hook configuration for all lifecycle events",
-      "notifications": "Multi-channel notification routing (ntfy, Discord, Twilio)",
+      "notifications": "Multi-channel notification routing (ntfy, Twilio)",
       "statusLine": "Status line command configuration"
     },
     "_migration": "Identity configuration moved from DAIDENTITY.md to settings.json. The daidentity and principal sections replace the old env.DA and env.PRINCIPAL patterns. All hooks now read from settings.json via the centralized identity module (hooks/lib/identity.ts).",
@@ -807,10 +807,6 @@
       "topic": "${NTFY_TOPIC}",
       "server": "ntfy.sh"
     },
-    "discord": {
-      "enabled": true,
-      "webhook": "${DISCORD_WEBHOOK}"
-    },
     "twilio": {
       "enabled": true,
       "toNumber": "${TWILIO_TO_NUMBER}"
@@ -827,12 +823,10 @@
         "ntfy"
       ],
       "error": [
-        "ntfy",
-        "discord"
+        "ntfy"
       ],
       "security": [
-        "ntfy",
-        "discord"
+        "ntfy"
       ]
     }
   },

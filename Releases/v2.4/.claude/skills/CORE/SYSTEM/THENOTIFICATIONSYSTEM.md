@@ -196,7 +196,7 @@ The backgrounded `&` and redirected output (`> /dev/null 2>&1`) ensure the curl 
 
 ---
 
-## External Notifications (Push, Discord)
+## External Notifications (Push)
 
 **Beyond voice notifications, PAI supports external notification channels:**
 
@@ -205,7 +205,6 @@ The backgrounded `&` and redirected output (`> /dev/null 2>&1`) ensure the curl 
 | Channel | Service | Purpose | Configuration |
 |---------|---------|---------|---------------|
 | **ntfy** | ntfy.sh | Mobile push notifications | `settings.json → notifications.ntfy` |
-| **Discord** | Webhook | Team/server notifications | `settings.json → notifications.discord` |
 | **Desktop** | macOS native | Local desktop alerts | Always available |
 
 ### Smart Routing
@@ -218,7 +217,7 @@ Notifications are automatically routed based on event type:
 | `longTask` | Voice + ntfy | Task duration > 5 minutes |
 | `backgroundAgent` | ntfy | Background agent completes |
 | `error` | Voice + ntfy | Error in response |
-| `security` | Voice + ntfy + Discord | Security alert |
+| `security` | Voice + ntfy | Security alert |
 
 ### Configuration
 
@@ -232,10 +231,6 @@ Located in `~/.claude/settings.json`:
       "topic": "kai-[random-topic]",
       "server": "ntfy.sh"
     },
-    "discord": {
-      "enabled": false,
-      "webhook": "https://discord.com/api/webhooks/..."
-    },
     "thresholds": {
       "longTaskMinutes": 5
     },
@@ -244,7 +239,7 @@ Located in `~/.claude/settings.json`:
       "longTask": ["ntfy"],
       "backgroundAgent": ["ntfy"],
       "error": ["ntfy"],
-      "security": ["ntfy", "discord"]
+      "security": ["ntfy"]
     }
   }
 }
@@ -259,11 +254,6 @@ Located in `~/.claude/settings.json`:
 
 Topic name acts as password - use random string for security.
 
-### Discord Setup
-
-1. Create webhook in your Discord server
-2. Add webhook URL to `settings.json`
-3. Set `discord.enabled: true`
 
 ### SMS (Not Recommended)
 
@@ -302,7 +292,6 @@ await notifyError("Database connection failed");
 
 // Direct channel access
 await sendPush("Message", { title: "Title", priority: "high" });
-await sendDiscord("Message", { title: "Title", color: 0x00ff00 });
 ```
 
 ### Design Principles

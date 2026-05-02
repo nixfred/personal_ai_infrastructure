@@ -4,7 +4,6 @@
  *
  * Channels:
  * - ntfy.sh: Mobile push notifications
- * - Discord: Team/server notifications (optional)
  * - Desktop: Native macOS notifications
  *
  * Design principles:
@@ -50,10 +49,6 @@ export interface NotificationConfig {
     topic: string;
     server: string;
   };
-  discord: {
-    enabled: boolean;
-    webhook: string;
-  };
   twilio: {
     enabled: boolean;
     toNumber: string;  // User's phone number for SMS alerts
@@ -62,7 +57,7 @@ export interface NotificationConfig {
     longTaskMinutes: number;
   };
   routing: {
-    [key in NotificationEvent]: ('ntfy' | 'discord' | 'desktop' | 'sms')[];
+    [key in NotificationEvent]: ('ntfy' | 'desktop' | 'sms')[];
   };
 }
 
@@ -76,10 +71,6 @@ const DEFAULT_CONFIG: NotificationConfig = {
     topic: '',       // Required: set in settings.json notifications.ntfy.topic
     server: 'ntfy.sh'
   },
-  discord: {
-    enabled: false,
-    webhook: ''
-  },
   twilio: {
     enabled: false,
     toNumber: ''
@@ -91,8 +82,8 @@ const DEFAULT_CONFIG: NotificationConfig = {
     taskComplete: [],                    // Voice only (existing behavior)
     longTask: ['ntfy'],                  // Push for long tasks
     backgroundAgent: ['ntfy'],           // Push for background completions
-    error: ['ntfy', 'discord'],          // Multiple channels for errors
-    security: ['ntfy', 'discord', 'sms'] // All channels for security
+    error: ['ntfy'],          // Multiple channels for errors
+    security: ['ntfy', 'sms'] // All channels for security
   }
 };
 
@@ -120,7 +111,6 @@ export function getNotificationConfig(): NotificationConfig {
           ...DEFAULT_CONFIG,
           ...settings.notifications,
           ntfy: { ...DEFAULT_CONFIG.ntfy, ...settings.notifications?.ntfy },
-          discord: { ...DEFAULT_CONFIG.discord, ...settings.notifications?.discord },
           twilio: { ...DEFAULT_CONFIG.twilio, ...settings.notifications?.twilio },
           thresholds: { ...DEFAULT_CONFIG.thresholds, ...settings.notifications?.thresholds },
           routing: { ...DEFAULT_CONFIG.routing, ...settings.notifications?.routing }
@@ -246,54 +236,6 @@ export async function sendPush(
 }
 
 /**
- * Send notification to Discord webhook
- */
-export async function sendDiscord(
-  message: string,
-  options: {
-    title?: string;
-    description?: string;
-    color?: number;       // Embed color (decimal)
-    fields?: Array<{ name: string; value: string; inline?: boolean }>;
-  } = {}
-): Promise<boolean> {
-  const config = getNotificationConfig();
-
-  if (!config.discord.enabled || !config.discord.webhook) {
-    return false;
-  }
-
-  try {
-    const payload: any = {};
-
-    if (options.title || options.description || options.fields) {
-      // Use embed for rich messages
-      payload.embeds = [{
-        title: options.title,
-        description: options.description || message,
-        color: options.color || 0x7289da, // Discord blurple
-        fields: options.fields,
-        timestamp: new Date().toISOString()
-      }];
-    } else {
-      // Simple text message
-      payload.content = message;
-    }
-
-    const response = await fetch(config.discord.webhook, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    });
-
-    return response.ok;
-  } catch (error) {
-    // Discord send failed - silent
-    return false;
-  }
-}
-
-/**
  * Send native macOS desktop notification
  */
 export async function sendDesktop(
@@ -396,13 +338,6 @@ export async function notify(
         }));
         break;
 
-      case 'discord':
-        promises.push(sendDiscord(message, {
-          title: options.title || getDefaultTitle(event),
-          color: getDiscordColor(event)
-        }));
-        break;
-
       case 'desktop':
         promises.push(sendDesktop(
           options.title || getDefaultTitle(event),
@@ -495,13 +430,3 @@ function getDefaultTags(event: NotificationEvent): string[] {
   return tags[event];
 }
 
-function getDiscordColor(event: NotificationEvent): number {
-  const colors: Record<NotificationEvent, number> = {
-    taskComplete: 0x57f287,   // Green
-    longTask: 0x57f287,       // Green
-    backgroundAgent: 0x5865f2, // Blurple
-    error: 0xed4245,          // Red
-    security: 0xfee75c        // Yellow
-  };
-  return colors[event];
-}

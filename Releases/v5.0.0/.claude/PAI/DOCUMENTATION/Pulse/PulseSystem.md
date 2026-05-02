@@ -847,6 +847,6 @@ This subsystem provides all features of OpenClaw's SOUL.md identity system plus:
 
 ## Related Documentation
 
-- **Notification System:** `THENOTIFICATIONSYSTEM.md` -- voice, push, Discord channels that Pulse dispatches to
+- **Notification System:** `THENOTIFICATIONSYSTEM.md` -- voice, push channels that Pulse dispatches to
 - **Memory System:** `MEMORYSYSTEM.md` -- memory consolidation job runs via Pulse
 - **Hook System:** `THEHOOKSYSTEM.md` -- hooks are event-driven; Pulse is time-driven

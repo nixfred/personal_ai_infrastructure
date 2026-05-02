@@ -178,7 +178,6 @@ cat ~/.claude/skills/CORE/USER/SKILLCUSTOMIZATIONS/PAIUpgrade/youtube-channels.j
 - Look at conference speaker lists
 
 ### Community Mining
-- Search Discord/Slack for recommended resources
 - Check Reddit threads for learning resources
 - Look at "awesome" lists on GitHub
 

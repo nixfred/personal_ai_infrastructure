@@ -56,7 +56,7 @@ TruffleHog detects 700+ credential types:
 | AI Services | OpenAI, Anthropic, Hugging Face |
 | Payment | Stripe, PayPal, Square |
 | Version Control | GitHub, GitLab, Bitbucket tokens |
-| Communication | Slack, Discord, Twilio |
+| Communication | Slack, Twilio |
 | Database | MongoDB, PostgreSQL connection strings |
 | Other | OAuth tokens, private keys, JWTs |
 

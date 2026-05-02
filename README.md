@@ -43,7 +43,6 @@
 [![Built with Claude](https://img.shields.io/badge/Built_with-Claude-D4A574?style=flat&logo=anthropic&logoColor=white)](https://claude.ai)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Bun](https://img.shields.io/badge/Bun-000000?style=flat&logo=bun&logoColor=white)](https://bun.sh)
-[![Community](https://img.shields.io/badge/Community-5865F2?style=flat&logo=discord&logoColor=white)](https://danielmiessler.com/upgrade)
 
 <br/>
 
@@ -304,15 +303,13 @@ Recovery is straightforward:
 | **Granular Model Routing** | Route different tasks to different models based on complexity |
 | **Remote Access** | Access your PAI from anywhere—mobile, web, other devices |
 | **Outbound Phone Calling** | Voice capabilities for outbound calls |
-| **External Notifications** | Robust notification system for Email, Discord, Telegram, Slack |
+| **External Notifications** | Robust notification system for Email, Telegram, Slack |
 
 ---
 
 ## 🌐 Community
 
 **GitHub Discussions:** [Join the conversation](https://github.com/danielmiessler/Personal_AI_Infrastructure/discussions)
-
-**Community Discord:** PAI is discussed in the [community Discord](https://danielmiessler.com/upgrade) along with other AI projects
 
 **Twitter/X:** [@danielmiessler](https://twitter.com/danielmiessler)
 

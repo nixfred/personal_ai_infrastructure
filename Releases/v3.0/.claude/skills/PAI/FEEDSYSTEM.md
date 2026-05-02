@@ -21,7 +21,7 @@ NOISE (thousands of items/day from hundreds of sources)
 INTELLIGENCE (rated, labeled, priority-routed to specific destinations)
 ```
 
-**The key insight:** Different content deserves different treatment. A trusted security researcher posting about a national security issue with high urgency should trigger Telegram + Discord + email immediately. A mediocre blog post about a topic you've seen before should archive silently. The Feed System makes these routing decisions automatically using multi-dimensional ratings and configurable rules.
+**The key insight:** Different content deserves different treatment. A trusted security researcher posting about a national security issue with high urgency should trigger Telegram + email immediately. A mediocre blog post about a topic you've seen before should archive silently. The Feed System makes these routing decisions automatically using multi-dimensional ratings and configurable rules.
 
 ---
 
@@ -38,7 +38,6 @@ INTELLIGENCE (rated, labeled, priority-routed to specific destinations)
 │  Channels     │   (fetch, parse,    │                                   │
 │  Feeds        │    normalize)       │   ┌─► ROUTE ──┬─► Telegram       │
 │  Publications │                     │   │  (rules,  │                   │
-│               │   SUMMARIZE ────────┤   │   AND     ├─► Discord        │
 │  RSS          │   (Haiku: short +   │   │   logic,  │                   │
 │  YouTube      │    medium)          │   │   priority)├─► Email         │
 │  Twitter/X    │                     │   │           │                   │
@@ -154,7 +153,7 @@ Rules are the core of the intelligence routing. They encode what matters and how
 
 | Rule | Conditions | Action | Priority |
 |------|-----------|--------|----------|
-| Critical security | tier S/A + urgency >= 8 + Security label | notify (Telegram, Discord, email) | immediate |
+| Critical security | tier S/A + urgency >= 8 + Security label | notify (Telegram, email) | immediate |
 | High-quality AI content | tier S/A + AI label + quality >= 80 | blog-draft + social-post | daily |
 | Breaking news | Breaking label + urgency >= 9 | notify (Telegram) | immediate |
 | Weekly digest material | tier B+ + importance >= 6 | digest | weekly |
@@ -164,7 +163,7 @@ Rules are the core of the intelligence routing. They encode what matters and how
 
 | Priority | Meaning | Delivery |
 |----------|---------|----------|
-| **immediate** | Act now | Push notification: Telegram, Discord, email |
+| **immediate** | Act now | Push notification: Telegram, email |
 | **daily** | Review today | Included in daily digest/queue |
 | **weekly** | Review this week | Included in weekly compilation |
 | **archive** | Store for reference | No active delivery |
@@ -173,7 +172,7 @@ Rules are the core of the intelligence routing. They encode what matters and how
 
 | Destination | Action | Implementation |
 |-------------|--------|----------------|
-| `notify` | Push alert to messaging platforms | Telegram, Discord, Email via respective APIs |
+| `notify` | Push alert to messaging platforms | Telegram, Email via respective APIs |
 | `blog-draft` | Create draft post on yourdomain.com | Your blogging skill integration |
 | `social-post` | Generate and queue social media post | Your social posting skill |
 | `digest` | Accumulate for periodic compilation | Daily/weekly digest builder |

@@ -809,11 +809,6 @@ async function main() {
     console.log('\n');
   }
 
-  // Community reminder
-  console.log('## 💬 Community Channel\n');
-  console.log('**Discord:** https://discord.com/invite/6PPFFzqPDZ');
-  console.log('_(Manual check recommended - automated scraping not performed)_\n');
-
   console.log('═'.repeat(80));
   console.log('\n📊 STATUS: Report generated successfully');
   console.log('➡️ NEXT: Review HIGH priority items and implement relevant recommendations');

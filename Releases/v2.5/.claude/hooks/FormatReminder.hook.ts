@@ -58,7 +58,7 @@ CAPABILITIES (choose zero or more that would help):
 SKILLS (choose zero or more matching skills — use "SkillName" or "SkillName:WorkflowName"):
 - _BLOGGING: Blog workflow. Triggers: blog, website, publish, deploy, preview, write post, edit post
 - _BROADCAST: Multi-platform social posting. Triggers: broadcast, tweet, post to X, LinkedIn post, cross-post
-- _COMMUNICATION: Email/Discord/SMS. Triggers: send email, message, text, Discord alert
+- _COMMUNICATION: Email/SMS. Triggers: send email, message, text
 - _CLICKUP: Task management. Triggers: ClickUp, tasks, inbox, time tracking, projects
 - _CONTENT: Search published content. Triggers: search content, my tweets, LinkedIn posts, newsletter search
 - _DAEMON: Daemon site. Triggers: daemon, daemon site
@@ -73,7 +73,7 @@ SKILLS (choose zero or more matching skills — use "SkillName" or "SkillName:Wo
 - _SYSTEM: System maintenance. Triggers: integrity check, document session, security scan
 - _TELEGRAM: Telegram bot. Triggers: telegram, send telegram
 - _UL: UL business. Triggers: consulting, NDA, proposal, SOW
-- _ULCOMMUNITY: UL Discord. Triggers: Discord, community, UL community
+- _ULCOMMUNITY: UL community. Triggers: community, UL community
 - _ULWORK: UL operations. Triggers: tasks, reminders, SOPs, work items, standard operating procedures
 - Art: Visual content. Triggers: art, header images, diagrams, illustrations, visualizations
 - Browser: Browser automation. Triggers: browser, screenshot, debug web, verify UI

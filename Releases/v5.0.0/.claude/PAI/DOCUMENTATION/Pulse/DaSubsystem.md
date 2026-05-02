@@ -222,7 +222,7 @@ autonomy:
     - update_diary              # Write daily diary entry
     - routine_checks            # Run scheduled checks
   must_ask:                     # Things that require principal approval
-    - send_external_message     # Email, Discord, Telegram to others
+    - send_external_message     # Email, Telegram to others
     - modify_code               # Code changes in projects
     - financial_action          # Anything involving money
     - delete_data               # Destructive operations

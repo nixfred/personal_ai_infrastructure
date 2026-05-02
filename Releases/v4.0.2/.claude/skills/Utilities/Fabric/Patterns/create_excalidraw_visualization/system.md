@@ -116,7 +116,6 @@ Attributes
 Docs
 Get Started
 Community
-Discord
 Twitter
 Linkedin
 More

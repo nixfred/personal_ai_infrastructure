@@ -103,8 +103,6 @@
         "webhooks": {
           "description": "Webhook URLs that could expose private channels",
           "patterns": [
-            "https://discord\\.com/api/webhooks/[0-9]+/[a-zA-Z0-9_-]+",
-            "https://discordapp\\.com/api/webhooks/[0-9]+/[a-zA-Z0-9_-]+",
             "https://hooks\\.slack\\.com/services/T[A-Z0-9]+/B[A-Z0-9]+/[a-zA-Z0-9]+",
             "https://ntfy\\.sh/[a-zA-Z0-9_-]{10,}",
             "ntfy\\.sh/kai-[a-zA-Z0-9]+",

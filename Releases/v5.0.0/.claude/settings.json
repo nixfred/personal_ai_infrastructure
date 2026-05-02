@@ -1294,7 +1294,7 @@
       "env": "Environment variables available to all hooks and tools via process.env",
       "permissions": "Tool permission configuration (allow, deny, ask lists)",
       "hooks": "Hook configuration for all lifecycle events",
-      "notifications": "Multi-channel notification routing (ntfy, Discord, Twilio)",
+      "notifications": "Multi-channel notification routing (ntfy, Twilio)",
       "statusLine": "Status line command configuration"
     },
     "_httpHooks": "Pulse HTTP routes on pai:31337 (managed by Pulse process). SecurityPipeline: command hook on Bash/Write/Edit/Read (exit(2) hard-block). SkillGuard + AgentGuard: HTTP hooks via Pulse routes (fail-open).",
@@ -1315,10 +1315,6 @@
       "topic": "${NTFY_TOPIC}",
       "server": "ntfy.sh"
     },
-    "discord": {
-      "enabled": true,
-      "webhook": "${DISCORD_WEBHOOK}"
-    },
     "twilio": {
       "enabled": true,
       "toNumber": "${TWILIO_TO_NUMBER}"
@@ -1335,12 +1331,10 @@
         "ntfy"
       ],
       "error": [
-        "ntfy",
-        "discord"
+        "ntfy"
       ],
       "security": [
-        "ntfy",
-        "discord"
+        "ntfy"
       ]
     }
   },

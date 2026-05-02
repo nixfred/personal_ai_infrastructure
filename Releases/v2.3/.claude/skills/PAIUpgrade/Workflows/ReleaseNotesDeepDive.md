@@ -48,7 +48,6 @@ For each feature:
    - https://support.claude.com
 
 4. Search Community Resources
-   - Claude Developers Discord mentions
    - GitHub Discussions
    - Stack Overflow
 ```

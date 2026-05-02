@@ -190,7 +190,7 @@ interface StopPayload extends BasePayload {
 | `ResponseTabReset.hook.ts` | Reset Kitty tab title/color after response | No | Kitty terminal |
 | `VoiceCompletion.hook.ts` | Send voice line to TTS server | No | Voice Server |
 | `DocIntegrity.hook.ts` | Cross-ref + semantic drift checks + arch summary regen | No | Inference API |
-| `StopNotify.hook.ts` | Push notification on completion | No | ntfy/Discord |
+| `StopNotify.hook.ts` | Push notification on completion | No | ntfy |
 
 ### Subagent Lifecycle Hooks
 
